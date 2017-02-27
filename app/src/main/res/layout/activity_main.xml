@@ -8,7 +8,4 @@
     android:background="@color/colorPrimary"
     tools:context="com.baumgartner.webtree.wizard.MainActivity">
 
-
-
-
 </LinearLayout>

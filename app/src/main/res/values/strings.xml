@@ -3,4 +3,10 @@
     <string name="new_game_button">Neues Spiel</string>
     <string name="game_rule_button">Spielregeln</string>
     <string name="continue_game_button">Spiel fortsetzen</string>
+    <string-array name="player_count">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
 </resources>

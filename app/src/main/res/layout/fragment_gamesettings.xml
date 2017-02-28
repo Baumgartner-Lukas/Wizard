@@ -7,18 +7,51 @@
     android:background="@color/colorPrimary"
     android:id="@+id/fragmentGameSettings">
 
-    <TextView
-        android:text="Spieler Anzahl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/startGameButton"
+            android:text="Spiel Starten"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
 
-        android:id="@+id/textView" />
 
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/playerCountSpinner"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/playerNameRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/playerNameRecyclerView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp">
+
+                <TextView
+                android:id="@+id/labelSpinner"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="Spieler"
+                android:layout_marginLeft="32dp"
+                android:textSize="18sp"
+
+                android:layout_marginStart="22dp" />
+
+                <Spinner
+                    android:id="@+id/playerCountSpinner"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
 </RelativeLayout>
